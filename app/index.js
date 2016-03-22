@@ -83,7 +83,7 @@ module.exports = Base.extend({
           return true;
         } catch (e) {
           // It isn't accessible
-          return 'Invalid path. Please ensure this is a valid path to your WAB root.';
+          return 'Invalid path. Please ensure this is a valid path to your WAB root or no "server/apps" has been found inside that directory, please create at least one app.';
         }
       }
     }, {
